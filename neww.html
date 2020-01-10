@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <style>
+   @font-face {
+            font-family: myfonts;
+            src: url(Nexa-Light.otf);
+         }
+ </style>
+</head>
+    
+<body>
+
+        
+ <nav class="navbar navbar-expand-lg navbar-light  fixed-top" id="navbar12" style="margin-top: 10px; background-color: transparent;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" style="color: white;"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#" style="color: white;">The Heaven</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="navbars">
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color:  white;transition: 0.5s;font-family: myfonts;">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: white;transition: 0.5s;font-family: myfonts;">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#" style="color: white;transition: 0.5s;font-family: myfonts;">Rooms</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link " href="#" style="color: white;transition: 0.5s;font-family: myfonts;">Contact</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-success my-2 my-sm-0" id="book-button" >BOOK ONLINE</button>
+    </form>
+     </div>
+</nav>
+    
+    <div class="jumbotron text-center" id="container1">
+        
+    <div class="inside">
+        
+        <h1 class="heading text-center">The Luxuries Stay</h1>
+        <br>
+        <form>
+        <input  id="datepicker"  placeholder="Check-in" required>
+            
+            
+        <input  id="datepicker"  placeholder="Check-out" required>
+        
+        <input id="in" type="text" placeholder="Children" required>
+        <input id="in"type="text" placeholder="Rooms" required>
+        <button class="btn btn-outline-success my-2 my-sm-0" id="book-button" type="submit">BOOK NOW</button>
+        </form>
+
+        </div>
+        </div>
+ 
+     <div class="container" id="cont2">
+        <div class="row">
+
+    
+            
+    
+           
+              <div class="col-xl-4">
+                
+               
+        <img id="imageicon" src="https://img.icons8.com/pastel-glyph/60/000000/bed.png" style="height: 70px;width:70px;">
+        <h2>Luxury Room</h2>
+       <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse nec faucibus velit. Quisque eleifend orci ipsum, a bibendum.</p>
+              </div>
+            
+      
+        
+         
+            
+      
+             
+              <div class="col-xl-4">
+               
+                <img id="imageicon" src="https://img.icons8.com/ios/60/000000/swimming-pool.png" style="height: 70px;width:70px;">
+                <h2>Infinity Pool</h2>
+                 <p>Vestibulum ante ipsum primis in faucibus orci<br> luctus et ultrices posuere cubilia Curae; Suspendisse nec faucibus velit. Quisque eleifend orci ipsum, a bibendum.</p>
+              </div>
+             
+      
+            
+            
+            
+      
+        
+              <div class="col-xl-4">
+               
+                <img id="imageicon" src="https://img.icons8.com/ios/60/000000/3-star-hotel.png" style="height: 70px;width:70px;">
+                <h2>Fabuloes Resort</h2>
+                 <p>Vestibulum ante ipsum primis in faucibus orci<br> luctus et ultrices posuere cubilia Curae; Suspendisse nec faucibus velit. Quisque eleifend orci ipsum, a bibendum.</p>
+                          
+            </div>
+          
+      
+          </div>
+         
+      
+
+         </div>
+    <div class="jumbotron" id="jumbotron2">
+    <div class="row">
+        <div class="col-xl-3" id="gallery" style="background-image: url(https://colorlib.com/preview/theme/theriver/images/gallery_1.jpg); height: 450px; width: 200px;background-size: cover;">
+    
+        </div>
+        <div class="col-xl-3" id="gallery" style="background-image: url(architecture-ceiling-chairs-262047.jpg); height: 450px; width: 200px;background-size: cover;">
+        
+
+        </div>
+        <div class="col-xl-3" id="gallery" style="background-image: url(bed-bedroom-ceiling-262048.jpg); height: 450px; width: 200px;background-size: cover;">
+        
+        </div>
+        <div class="col-xl-3" id="gallery" style="background-image: url(bed-bedroom-cozy-164595.jpg); height: 450px; width: 200px;background-size: cover;">
+       
+        </div>
+        </div>
+    </div>
+
+  
+
+
+
+    <div class="jumbotron" id="jumbo3" style="background-color: white;">
+   <div class="head">
+        <h3 class="book">Book a Room</h3>
+       <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Quisque eleifend orci ipsum <br>a bibendum lacus suscipit sit.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;<br> Suspendisse nec faucibus velit. Quisque eleifend orci ipsum, a bibendum lacus suscipit sit </p>
+        </div>    
+    
+         <br>
+                                <div class="row">
+                                    <div class="col-sm-4" id="col1img">
+                                    
+                                            <img src="bed-bedroom-cozy-164595.jpg" alt="Image" style="max-width:60%; height: 450px;margin-left: 270px;" id="img1">
+                                         <button class="btn btn-primary" id="btn">Family Room</button>               
+
+</div>
+                                        
+                                
+                          <div class="col-sm-4" id="col2img">
+                                        
+                            <img src="bed-bedroom-ceiling-262048.jpg" alt="Image" style="max-width:60%;height: 450px;margin-left: 90px;display: block" id="img2">
+                                         <button class="btn btn-primary" id="btn">Single Room</button>
+                                       
+</div>
+                            
+            <div class="col-sm-4" id="col3img">
+                                        
+        <img src="bed-bedroom-furniture-271616.jpg" alt="Image" style="max-width:60%;height: 450px;margin-left: -100px;" id="img3">
+                                        <button class="btn btn-primary" id="btn">Delux Room</button>
+                                    </div>
+                                  
+                                </div>
+                              </div>
+    
+                   <div class="jumbotron" id="cont3" style="height: 600px;">
+        
+                        <div class="row">
+                                <div class="col-sm-4" id="col1img">
+                                
+                                        <img src="bed-bedroom-cozy-164595.jpg" alt="Image" style="max-width:60%; height: 450px;margin-left: 270px;" id="img1">
+                                                 
+
+</div>
+                                    
+                            
+                      <div class="col-sm-4" id="col2img">
+                                    
+                        <img src="bed-bedroom-ceiling-262048.jpg" alt="Image" style="max-width:60%;height: 450px;margin-left: 90px;display: block" id="img2">
+                                    
+                                   
+</div>
+                        
+        <div class="col-sm-4" id="col3img">
+                                    
+    <img src="bed-bedroom-furniture-271616.jpg" alt="Image" style="max-width:60%;height: 450px;margin-left: -100px;" id="img3">
+                                  
+                                </div>
+                              
+                            </div>
+                                  
+                 </div>
+        
+       <!-- Section: Features v.2 -->
+<section class="my-5">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center my-5">Why is it so great?</h2>
+        <!-- Section description -->
+        <p class="lead grey-text text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam.</p>
+      
+        <!-- Grid row -->
+        <div class="row">
+      
+          <!-- Grid column -->
+          <div class="col-md-4 mb-md-0 mb-5">
+      
+            <!-- Grid row -->
+            <div class="row">
+      
+              <!-- Grid column -->
+              <div class="col-lg-2 col-md-3 col-2">
+                <i class="fas fa-bullhorn blue-text fa-2x"></i>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-lg-10 col-md-9 col-10">
+                <h4 class="font-weight-bold">Marketing</h4>
+                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <a class="btn btn-primary btn-sm">Learn more</a>
+              </div>
+              <!-- Grid column -->
+      
+            </div>
+            <!-- Grid row -->
+      
+          </div>
+          <!-- Grid column -->
+      
+          <!-- Grid column -->
+          <div class="col-md-4 mb-md-0 mb-5">
+      
+            <!-- Grid row -->
+            <div class="row">
+      
+              <!-- Grid column -->
+              <div class="col-lg-2 col-md-3 col-2">
+                <i class="fas fa-cogs pink-text fa-2x"></i>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-lg-10 col-md-9 col-10">
+                <h4 class="font-weight-bold">Customization</h4>
+                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <a class="btn btn-pink btn-sm">Learn more</a>
+              </div>
+              <!-- Grid column -->
+      
+            </div>
+            <!-- Grid row -->
+      
+          </div>
+          <!-- Grid column -->
+      
+          <!-- Grid column -->
+          <div class="col-md-4">
+      
+            <!-- Grid row -->
+            <div class="row">
+      
+              <!-- Grid column -->
+              <div class="col-lg-2 col-md-3 col-2">
+                <i class="fas fa-tachometer-alt purple-text fa-2x"></i>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-lg-10 col-md-9 col-10">
+                <h4 class="font-weight-bold">Support</h4>
+                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <a class="btn btn-purple btn-sm">Learn more</a>
+              </div>
+              <!-- Grid column -->
+      
+            </div>
+            <!-- Grid row -->
+      
+          </div>
+          <!-- Grid column -->
+      
+        </div>
+        <!-- Grid row -->
+      
+      </section>
+      <!-- Section: Features v.2 -->
+        
+    <style>
+        
+       
+        #cont3{
+            background: url(blue-exotic-hotel-189296.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+            
+        }
+        
+        #gallery:hover{
+            transform: scale(1);
+        }
+    .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  
+}
+
+#col1img:hover .overlay {
+  opacity: 1;
+  bottom:100px;
+    top:100px;
+}
+
+.text {
+    display: inline-block;
+  color: black;
+    background-color: wheat;
+font-family: fantasy;
+  padding: 16px 32px;
+  font-size: 20px;
+  position: absolute;
+  top: 20%;
+  left: 80%;
+     -webkit-transition-property: bottom, top;
+  -webkit-transition-duration: 0.5s;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+        @media screen and (max-width: 600px){
+            .heading{
+                font-size: 35px;
+            }
+        }
+        @media screen and (max-width: 600px){
+            #datepicker{
+                display: flex;
+                width: 350px;
+                
+            }
+        }
+         @media screen and (max-width: 600px){
+            #in{
+                width: 400px;
+                display: flex;
+                
+                
+            }
+        }
+        @media screen and (max-width: 800px){
+            .heading{
+                font-size: 35px;
+            }
+        }
+        @media screen and (max-width: 800px){
+            #datepicker{
+                display: flex;
+                width: 350px;
+                
+                
+            }
+        }
+         @media screen and (max-width: 700px){
+            #in{
+                width: 8em;
+                display: flex;
+                
+                
+            }
+        }
+        
+        @media screen and (max-width: 600px){
+            #imageicon{
+                margin-right: 50px;
+                display: flex;
+                margin: 50px;
+            }
+        }
+            #col3img #btn {
+  position: absolute;
+  top: 91%;
+  left: 11%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: coral;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+width: 300px;
+height: 55px;
+                border-radius: 0px;;
+        }
+        #col1img:hover #img1{
+            opacity: 0.3;
+        }
+        #col1img:hover .overlay{
+            opacity: 1;
+        }
+        
+        #col2img #btn {
+  position: absolute;
+  top: 91%;
+  left: 47.5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: coral;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+width: 300px;
+height: 55px;
+             border-radius: 0px;;
+        }
+        #col1img #btn {
+  position: absolute;
+  top: 91%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: coral;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+width: 300px;
+height: 55px;
+             border-radius: 0px;
+        }
+        
+        .nav-link:hover{
+           border-bottom: 1px solid coral; 
+            transform: scale(1.1);
+            transition: 0.8s;
+            
+        }
+        #cont3{
+            height: 400px;
+            width: 100%;
+        }
+        #img1:hover{
+            opacity: 0.5;
+        }
+         #img2:hover{
+            opacity: 0.5;
+        }
+         #img3:hover{
+            opacity: 0.5;
+        }
+        .jumbo3{
+            height: 800px;
+            background-color: red;
+            position: relative;
+        }
+        .book{
+            text-align: center;
+        color: black;
+            margin-top: 120px;
+            font-size: 35px;
+        }
+            
+        }
+        .heading:hover{
+            color: coral;
+        }
+        #cont2{
+            height: 300px;
+            margin-top: 120px;
+        }
+        #jumbotron2{
+            height: 400px;
+           background-color: white;
+        
+        }
+        #datepicker {
+            border: 2px solid white;
+            background-color: transparent;
+        
+            margin: 10px;
+            padding: 15px;
+            
+            
+        }
+        input, select, textarea{
+            color: white;
+        }
+        #in{
+            
+            border: 2px solid white;
+            background-color: transparent;
+            
+            margin: 10px;
+            padding: 15px;
+            width: 120px;
+            
+            
+        
+        }
+        #in:focus{
+            background-color: grey;
+        border-color: white;
+            
+        }
+        #datepicker:focus{
+            background-color: grey;
+            border-color: white;
+        }
+        h2{
+            margin-top: 18px;
+            text-align: center;
+            font-size: 30px;
+            color: coral;
+        }
+        p{
+            text-align: center;
+            margin-top: 15px;
+        }
+        #book-button{
+            margin-top: 10px;
+            background-color: coral;
+            height: 50px;
+            width: 150px;
+            color: white;
+            border-color: coral;
+            font-size: 12px;
+            margin-right: 60px;
+        }
+        #book-button:hover{
+    background-color: white;
+            color: coral;
+            border-color: white;
+        }
+        .nav-item {
+            margin-left: 40px;
+            font-family:Arial;
+        }
+    
+        #navbars{
+            margin-left: 700px;
+        }
+        .navbar-brand{
+            margin-left: 90px;
+            border: 3px solid white;
+            padding: 10px;
+            height: 50px;
+            color: white;
+            
+        }
+        .nav-item :hover{
+            color: coral;
+        }
+        #container1{
+            height: 800px;
+            background-image:url(dark-hotel-night-919.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            margin-top: 0px;
+        }
+        
+        ::placeholder{
+            color: white;
+            font-size: 14px;
+        }
+        
+        .inside{
+            text-align: center;
+            justify-content: center;
+        margin-top: 140px;
+            
+        }
+        h1{
+            font-size: 5.5em;
+            color: white;
+        }
+        img{
+            margin-left: 150px;
+        }
+    </style>
+    
+      <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+    </script>
+        <script>  
+  $(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 200) {
+	    $("#navbar12").css("background" , "black").css("height" , "80px").css("marginTop" , "0px").css("transition" , "1s");
+       
+         
+          
+	  }
+    
+	  else{
+          
+		  $("#navbar12").css("background" , "transparent").css("transition" , "1s");  
+         
+	  }
+  })
+})
+  </script>
+    
+
+</body>

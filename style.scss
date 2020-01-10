@@ -1,0 +1,23 @@
+.navbar{
+background-color: white;
+}
+a{
+    color: black;
+}
+body{
+    background-color: aqua
+}
+@keyframes yourAnimation{
+    0%{
+        transform: translateY(40px);
+        opacity: 0;
+        }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+        }
+}
+
+.tag{
+    animation: yourAnimation 1s forwards 0s ease-in;
+}

@@ -1,0 +1,558 @@
+<?php 
+  session_start(); 
+
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: login.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  	header("location: login.php");
+  }
+?>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Food-Corner</title>
+  <!-- Font Awesome -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="_custom-style.scss" rel="stylesheet">
+</head>
+<style>
+@font-face {
+  font-family: myfonts;
+  src: url(Nexa-Light.otf);
+}
+@font-face {
+  font-family: myfont;
+  src: url(GrandHotel-Regular.otf);
+}
+body{
+font-family: myfonts;
+background-image: url(apples-blurred-bowl-of-fruits-2801154.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+}
+#container1{
+  height: 750px;
+            background-image:url(beef-blur-close-up-1639563.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            margin-top: 0px;
+            background-position: center;
+            margin-bottom: 0%;
+}
+#col6{
+  height: 500px;
+            background-image:url(adults-chef-cook-2696064.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+    margin-top: -64px;
+    margin-right: -10px;
+    padding: 10px;
+          
+}
+#col5{
+  height: 500px;
+            background-image:url(appetizers-chef-dining-2814829.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+    margin-bottom: 0%;
+    margin-right: -10px;
+    padding: 10px;
+          
+}
+</style>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top" id="navbar12" style="margin-top: 10px; background-color: transparent;">
+        <a class="navbar-brand" href="#" style="color: white;font-weight: bold;margin-left: 90px;">FOOD CORNER</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" style="background-color:white;border-color: white;color: white;margin-left: 500px;margin-top: 0px;">
+        <span class="navbar-toggler-icon" ></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01"  >
+        
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="navbars">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: white;transition: 0.5s;font-family: myfonts;">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" style="color: white;transition: 0.5s;font-family: myfonts;" style="border-bottom:1px solid white">OUR MENU </a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link " href="index.php?logout='1'" style="color: red;">logout</a>
+          </li>
+          <li class="nav-item">
+          <?php  if (isset($_SESSION['username'])) : ?>
+              <a class="nav-link " href="#" style="color: white;transition: 0.5s;font-family: myfonts;">Welcome<?php echo $_SESSION['username']; ?></a>
+            </li>
+            <?php endif ?>
+        </ul>
+      <br>
+  
+
+         </div>
+    </nav>
+        
+        <div class="jumbotron text-center" id="container1">
+            <svg class="svganime" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="30%" style="margin-top: 70px;">
+  
+              <!-- Background -->
+              
+              
+              <!-- Text using the #pattern in defs as the fill -->
+              <text x="50%" text-anchor="middle" y="50%" dy="0.4em" fill="url(#pattern)" font-family="myfont" font-size="10vh" font-weight="bold">FOOD CORNER</text>
+              
+              <defs>  
+                <!-- Da gradient -->
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0">
+                  <stop offset="0%" style="stop-color:rgb(247, 162, 72);"/>
+  
+                  <stop offset="100%" style="stop-color:#eeebe9;"/>
+                </linearGradient>
+                
+                <!-- Stitch 2 gradients together for seamless animation  -->
+                <pattern id="pattern" x="0" y="0" width="300%" height="100%" patternUnits="userSpaceOnUse">
+                  <rect x="0" y="0" width="150%" height="100%" fill="url(#gradient)">
+                    <animate attributeType="XML"
+                             attributeName="x"
+                             from="0" to="150%"
+                             dur="7s"
+                             repeatCount="indefinite"/>
+                  </rect>
+                  <rect x="-150%" y="0" width="150%" height="100%" fill="url(#gradient)">
+                    <animate attributeType="XML"
+                             attributeName="x"
+                             from="-150%" to="0"
+                             dur="7s"
+                             repeatCount="indefinite"/>
+                  </rect>
+                </pattern>
+            
+             
+              
+              </defs>
+            </svg>
+              <h6 class="tag text=center" style="font-family: myfonts;color:white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h6>
+              <br>
+              <button class="text-center" id="btn">SEE OUR MENU</button>
+</div>
+
+<div class="jumbotron text-center" id="jumbo1" style="height: 100%;">
+
+<div class="row">
+<div class="col-md-6 mb-md-0 mb-5">
+  <br>
+<h2 class="text-center" style="margin-top: 20px;color:black;font-family: myfont">About us</h2><br>
+<p class="text-center" style="color: grey;font-size:16px;font-weight: bold;">
+  Our Chefs offer you perfect cooking, best served dishes with fresh<br> ingredients and old recipes. We have only carefully sourced and<br> seasonal ingredients in our disposal to make rustic dishes. We provide<br> you with daily self-made bread, sourdough pizza, roasted <br>fish-meat-vegetables and many more.
+ </p>
+<button class="text-center" id="btn2">SEE MORE</button>
+</div>
+<div class="col-md-6 mb-md-0 mb-5 " id="col6">
+
+  
+</div>
+</div>
+
+</div>
+<br>
+<br>
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="30%" style="margin-top: 70px;">
+  
+  <!-- Background -->
+  
+  
+  <!-- Text using the #pattern in defs as the fill -->
+  <text x="50%" text-anchor="middle" y="50%" dy="0.4em" fill="url(#pattern)" font-family="myfont" font-size="10vh" font-weight="bold">Today's Speciality</text>
+  
+  <defs>  
+    <!-- Da gradient -->
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0">
+      <stop offset="0%" style="stop-color:rgb(26, 14, 2);"/>
+
+      <stop offset="100%" style="stop-color:#eeebe9;"/>
+    </linearGradient>
+    
+    <!-- Stitch 2 gradients together for seamless animation  -->
+    <pattern id="pattern" x="0" y="0" width="300%" height="100%" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="150%" height="100%" fill="url(#gradient)">
+        <animate attributeType="XML"
+                 attributeName="x"
+                 from="0" to="150%"
+                 dur="7s"
+                 repeatCount="indefinite"/>
+      </rect>
+      <rect x="-150%" y="0" width="150%" height="100%" fill="url(#gradient)">
+        <animate attributeType="XML"
+                 attributeName="x"
+                 from="-150%" to="0"
+                 dur="7s"
+                 repeatCount="indefinite"/>
+      </rect>
+    </pattern>
+
+ 
+  
+  </defs>
+</svg>
+<center>><h4 class="text=center">Chicken with vegetables: mashed potatoes, bean pods, croutons, cranberry jam,rosemary</h4>
+<button class="text-center" id="btn2">SEE OUR MENU</button></center>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="jumbotron" style="height: 100%;background-color: rgb(245, 244, 244);margin-bottom: 0%;">
+
+<h2 class="text-center" style="color: black; font-family:myfont">MENU
+</h2>
+<div class="row">
+<div class="col-md-4 mb-md-0 mb-5">
+  <br>
+  <br>
+  <br>
+  <h6 style="color: grey;text-align:center;font-weight: bold">MEAT</h6>
+  <br>
+<h6 class="text-center" style="font-weight: bold">Chiken Breast _ _ _ _ _ _ _ _ _ _ _  <font style="color: gold;font-weight: bold;">$110.50</font></h6>
+<br>
+<h6 class="text-center" style="font-weight: bold">Chiken Breast _ _ _ _ _ _ _ _ _ _ _  <font style="color: gold;font-weight: bold;">$80.10</font></h6>
+<br>
+<h6 class="text-center" style="font-weight: bold">Chiken Breast _ _ _ _ _ _ _ _ _ _ _  <font style="color: gold;font-weight: bold;">$60.22</font></h6>
+<br>
+<h6 class="text-center" style="font-weight: bold">Chiken Breast _ _ _ _ _ _ _ _ _ _ _  <font style="color: gold;font-weight: bold;">$10.00</font></h6>
+
+</div>
+<div class="col-md-4 mb-md-0 mb-5">
+    <br>
+    <br>
+    <br>
+    <h6 style="color: grey;text-align:center;font-weight: bold">SIDES</h6>
+    <br>
+  <h6 class="text-center" style="font-weight: bold">Chiken Breast _ _ _ _ _ _ _ _ _ _ _  <font style="color: gold;font-weight: bold;">$110.50</font></h6>
+  <br>
+  <h6 class="text-center" style="font-weight: bold">Chiken Breast _ _ _ _ _ _ _ _ _ _ _  <font style="color: gold;font-weight: bold;">$80.10</font></h6>
+  <br>
+  <h6 class="text-center" style="font-weight: bold">Chiken Breast _ _ _ _ _ _ _ _ _ _ _  <font style="color: gold;font-weight: bold;">$60.22</font></h6>
+  <br>
+  <h6 class="text-center" style="font-weight: bold">Chiken Breast _ _ _ _ _ _ _ _ _ _ _  <font style="color: gold;font-weight: bold;">$10.00</font></h6>
+  <br>
+  <h6 class="text-center" style="font-weight: bold">Chiken Breast _ _ _ _ _ _ _ _ _ _ _  <font style="color: gold;font-weight: bold;">$10.00</font></h6>
+  
+  </div>
+  <div class="col-md-4 mb-md-0 mb-5">
+      <br>
+      <br>
+      <br>
+      <h6 style="color: grey;text-align:center;font-weight: bold;font-family: myfonts">PASTA</h6>
+      <br>
+    <h6 class="text-center" style="font-weight: bold">Chiken Breast _ _ _ _ _ _ _ _ _ _ _  <font style="color: gold;font-weight: bold;">$110.50</font></h6>
+    <br>
+    <h6 class="text-center" style="font-weight: bold">Chiken Breast _ _ _ _ _ _ _ _ _ _ _  <font style="color: gold;font-weight: bold;">$80.10</font></h6>
+    <br>
+    <h6 class="text-center" style="font-weight: bold">Chiken Breast _ _ _ _ _ _ _ _ _ _ _  <font style="color: gold;font-weight: bold;">$60.22</font></h6>
+    <br>
+    <h6 class="text-center" style="font-weight: bold">Chiken Breast _ _ _ _ _ _ _ _ _ _ _  <font style="color: gold;font-weight: bold;">$10.00</font></h6>
+    
+  
+    </div>
+    </div>
+    <br>
+    <br>
+</div>
+<div class="jumbotron text-center" id="jumbo1" style="height: 100%;">
+
+    <div class="row">
+    <div class="col-md-6 mb-md-0 mb-5" id="col5">
+    
+    </div>
+    <div class="col-md-6 mb-md-0 mb-5 ">
+        <br>
+        <h2 class="text-center" style="margin-top: 40px;color:black;font-family: myfont">Delivery</h2><br>
+        <p class="text-center" style="color: grey;font-size:16px;font-weight: bold;">Our Chefs offer you perfect cooking, best served dishes with fresh<br> ingredients and old recipes. We have only carefully sourced and<br> seasonal ingredients in our disposal to make rustic dishes. We provide<br> you with daily self-made bread, sourdough pizza, roasted <br>fish-meat-vegetables and many more.</p>
+        <button class="text-center" id="btn2" >OREDER NOW</button>
+      
+    </div>
+    </div>
+    
+    </div>
+   
+
+    <br>
+    <br>
+    <br>
+    
+    
+    
+    
+    
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="30%" style="margin-top: 70px;">
+      
+      <!-- Background -->
+      
+      
+      <!-- Text using the #pattern in defs as the fill -->
+      <text x="50%" text-anchor="middle" y="50%" dy="0.4em" fill="url(#pattern)" font-family="myfont" font-size="10vh" font-weight="bold">Tasty Dessert</text>
+      
+      <defs>  
+        <!-- Da gradient -->
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0">
+          <stop offset="0%" style="stop-color:rgb(26, 14, 2);"/>
+    
+          <stop offset="100%" style="stop-color:#eeebe9;"/>
+        </linearGradient>
+        
+        <!-- Stitch 2 gradients together for seamless animation  -->
+        <pattern id="pattern" x="0" y="0" width="300%" height="100%" patternUnits="userSpaceOnUse">
+          <rect x="0" y="0" width="150%" height="100%" fill="url(#gradient)">
+            <animate attributeType="XML"
+                     attributeName="x"
+                     from="0" to="150%"
+                     dur="7s"
+                     repeatCount="indefinite"/>
+          </rect>
+          <rect x="-150%" y="0" width="150%" height="100%" fill="url(#gradient)">
+            <animate attributeType="XML"
+                     attributeName="x"
+                     from="-150%" to="0"
+                     dur="7s"
+                     repeatCount="indefinite"/>
+          </rect>
+        </pattern>
+    
+     
+      
+      </defs>
+    </svg>
+    <center>><h4 class="text=center">Whether you crave sweet, savory, decadent or healthy,
+      we have hundreds of top-rated dessert recipes to satisfy your taste buds.</h4>
+   
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+ <br>
+ <br>
+
+    <div class="jumbotron text-center" style="background-color: white;height: 100%;margin-bottom: 0%">
+      
+
+     
+      
+        <!--Grid row-->
+        <div class="row text-center" style="margin:60px;">
+      
+          <!--Grid column-->
+          <div class="col-md-4 mb-md-0 mb-5">
+      
+            <div class="Services">
+              <!--Avatar-->
+          <center>
+                <div class="rounded-circle z-depth-1 img-fluid " style="height: 120px;background-color:black;width: 120px;margin-bottom: 30px;"><i class="fa fa-birthday-cake" aria-hidden="true"></i>
+              </div>
+              </center>
+              <!--Content-->
+              <h2 class="font-weight-bold " style="font-family: myfont;margin-bottom: 20px;color: black">Birtdays</h2>
+            
+              <p style="font-size: 16px;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing <br>elit. Quod
+                eos >id officiis hic tenetur quae<br> quaerat ad velit ab hic tenetur.Ut enim ad minima <br>veniam, quis nostrum exercitationem ullam
+                corporis<br> suscipit laboriosam, nisi ut aliquid commodi.</p>
+              <!--Review-->
+             
+            </div>
+      
+          </div>
+          <!--Grid column-->
+      
+          <!--Grid column-->
+          <div class="col-md-4 mb-md-0 mb-5">
+      
+            <div class="testimonial">
+              <!--Avatar-->
+              <center>
+                <div class="rounded-circle z-depth-1 img-fluid " style="height: 120px;background-color:black;width: 120px;margin-bottom: 30px;">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+
+              </div>
+              </center>
+              <!--Content-->
+              <h2 class="font-weight-bold " style="font-family: myfont;margin-bottom: 20px;color: black">Wedding</h2>
+          
+              <p class="font-weight-normal dark-grey-text" style="font-size: 16px;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br>elit. Quod
+                eos >id officiis hic tenetur quae<br> quaerat ad velit ab hic tenetur.Ut enim ad minima <br>veniam, quis nostrum exercitationem ullam
+                corporis<br> suscipit laboriosam, nisi ut aliquid commodi.</p>
+              <!--Review-->
+            
+            </div>
+      
+          </div>
+          <!--Grid column-->
+      
+          <!--Grid column-->
+          <div class="col-md-4">
+      
+            <div class="testimonial">
+              <!--Avatar-->
+              <center>
+                <div class="rounded-circle z-depth-1 img-fluid " style="height: 120px;background-color:black;width: 120px;margin-bottom: 30px;">
+                  <i class="fa fa-handshake" aria-hidden="true"></i>
+
+              </div>
+              </center>
+              <!--Content-->
+              <h2 class="font-weight-bold " style="font-family: myfont;margin-bottom: 20px;color: black">Meetings</h2>
+            
+              <p class="font-weight-normal dark-grey-text" style="font-size: 16px;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing <br>elit. Quod
+                eos >id officiis hic tenetur quae<br> quaerat ad velit ab hic tenetur.Ut enim ad minima <br>veniam, quis nostrum exercitationem ullam
+                corporis<br> suscipit laboriosam, nisi ut aliquid commodi.</p>
+              <!--Review-->
+            
+            </div>
+      
+          </div>
+          <!--Grid column-->
+      
+        </div>
+        <!--Grid row-->
+      
+    
+     
+   </div>
+
+
+<section class="contact">
+   <!--Grid row-->
+   <div class="row text-center" style="margin:60px;">
+      
+    <!--Grid column-->
+    <div class="col-md-4 mb-md-0 mb-5">
+
+      <div class="SERVICES">
+        <!--Avatar-->
+    
+        <!--Content-->
+        <h2 class="font-weight-bold " style="font-family: myfont;color: black">Events</h2>
+      
+      
+      </div>
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-4 mb-md-0 mb-5">
+
+      <div class="testimonial">
+     
+        <!--Content-->
+        <h2 class="font-weight-bold " style="font-family: myfont;color: black">Opening Hours</h2>
+    
+     
+      
+      </div>
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-4">
+
+      <div class="testimonial">
+     
+        <!--Content-->
+        <h2 class="font-weight-bold " style="font-family: myfont;color: black">Find Table</h2>
+      
+    </div>
+    <!--Grid column-->
+
+  </div>
+  <!--Grid row-->
+
+
+
+</section>
+<style>
+@keyframes yourAnimation{
+    0%{
+        transform: translateY(40px);
+        opacity: 0;
+        }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+        }
+}
+
+.svganime{
+    animation: yourAnimation 1s forwards 0s ease-in;
+}
+
+</style>
+<script>
+ $(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 200) {
+	    $("#navbar12").css("background" , "black").css("height" , "80px").css("marginTop" , "0px").css("transition" , "1s").css("opacity" , "0.8");
+       
+         
+          
+	  }
+    
+	  else{
+          
+		  $("#navbar12").css("background" , "transparent").css("transition" , "1s");  
+         
+	  }
+  })
+})
+
+
+</script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js">
+  
+  </script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

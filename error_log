@@ -1,0 +1,110 @@
+[13-Oct-2019 16:02:31 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php72\sess_c60f9173ed22031139bdf791f7509ee9, O_RDWR) failed: No such file or directory (2) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:02:31 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php72) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:02:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in C:\xampp\htdocs\Restaurant\server.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Restaurant\login.php(1): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\Restaurant\server.php on line 10
+[13-Oct-2019 16:02:38 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php72\sess_c60f9173ed22031139bdf791f7509ee9, O_RDWR) failed: No such file or directory (2) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:02:38 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php72) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:02:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in C:\xampp\htdocs\Restaurant\server.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Restaurant\login.php(1): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\Restaurant\server.php on line 10
+[13-Oct-2019 16:03:12 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php72\sess_c60f9173ed22031139bdf791f7509ee9, O_RDWR) failed: No such file or directory (2) in C:\xampp\htdocs\Restaurant\index.php on line 4
+[13-Oct-2019 16:03:12 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php72) in C:\xampp\htdocs\Restaurant\index.php on line 4
+[13-Oct-2019 16:03:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\Restaurant\index.php:1) in C:\xampp\htdocs\Restaurant\index.php on line 8
+[13-Oct-2019 16:05:04 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php72\sess_c60f9173ed22031139bdf791f7509ee9, O_RDWR) failed: No such file or directory (2) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:05:05 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php72) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:05:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in C:\xampp\htdocs\Restaurant\server.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Restaurant\register.php(1): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\Restaurant\server.php on line 10
+[13-Oct-2019 16:05:07 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php72\sess_c60f9173ed22031139bdf791f7509ee9, O_RDWR) failed: No such file or directory (2) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:05:07 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php72) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:05:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in C:\xampp\htdocs\Restaurant\server.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Restaurant\register.php(1): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\Restaurant\server.php on line 10
+[13-Oct-2019 16:06:45 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php72\sess_c60f9173ed22031139bdf791f7509ee9, O_RDWR) failed: No such file or directory (2) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:06:45 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php72) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:06:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in C:\xampp\htdocs\Restaurant\server.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Restaurant\register.php(1): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\Restaurant\server.php on line 10
+[13-Oct-2019 16:06:49 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php72\sess_c60f9173ed22031139bdf791f7509ee9, O_RDWR) failed: No such file or directory (2) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:06:49 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php72) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:06:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in C:\xampp\htdocs\Restaurant\server.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Restaurant\register.php(1): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\Restaurant\server.php on line 10
+[13-Oct-2019 16:06:50 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php72\sess_c60f9173ed22031139bdf791f7509ee9, O_RDWR) failed: No such file or directory (2) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:06:50 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php72) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:06:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in C:\xampp\htdocs\Restaurant\server.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Restaurant\register.php(1): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\Restaurant\server.php on line 10
+[13-Oct-2019 16:06:51 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php72\sess_c60f9173ed22031139bdf791f7509ee9, O_RDWR) failed: No such file or directory (2) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:06:51 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php72) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:06:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in C:\xampp\htdocs\Restaurant\server.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Restaurant\register.php(1): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\Restaurant\server.php on line 10
+[13-Oct-2019 16:07:04 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php72\sess_c60f9173ed22031139bdf791f7509ee9, O_RDWR) failed: No such file or directory (2) in C:\xampp\htdocs\Restaurant\index.php on line 4
+[13-Oct-2019 16:07:04 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php72) in C:\xampp\htdocs\Restaurant\index.php on line 4
+[13-Oct-2019 16:07:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\Restaurant\index.php:1) in C:\xampp\htdocs\Restaurant\index.php on line 8
+[13-Oct-2019 16:07:14 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php72\sess_c60f9173ed22031139bdf791f7509ee9, O_RDWR) failed: No such file or directory (2) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:07:14 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php72) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:07:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in C:\xampp\htdocs\Restaurant\server.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Restaurant\login.php(1): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\Restaurant\server.php on line 10
+[13-Oct-2019 16:07:25 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php72\sess_c60f9173ed22031139bdf791f7509ee9, O_RDWR) failed: No such file or directory (2) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:07:26 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php72) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[13-Oct-2019 16:07:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in C:\xampp\htdocs\Restaurant\server.php:10
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Restaurant\server.php on line 10
+[20-Oct-2019 12:16:08 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php72\sess_0507cc4aa71ca858c6cdb44c18551dc8, O_RDWR) failed: No such file or directory (2) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[20-Oct-2019 12:16:08 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php72) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[20-Oct-2019 12:16:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in C:\xampp\htdocs\Restaurant\server.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Restaurant\login.php(1): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\Restaurant\server.php on line 10
+[20-Oct-2019 12:16:15 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php72\sess_0507cc4aa71ca858c6cdb44c18551dc8, O_RDWR) failed: No such file or directory (2) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[20-Oct-2019 12:16:15 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php72) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[20-Oct-2019 12:16:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in C:\xampp\htdocs\Restaurant\server.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Restaurant\login.php(1): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\Restaurant\server.php on line 10
+[21-Oct-2019 13:01:56 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php72\sess_0507cc4aa71ca858c6cdb44c18551dc8, O_RDWR) failed: No such file or directory (2) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[21-Oct-2019 13:01:56 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php72) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[21-Oct-2019 13:01:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in C:\xampp\htdocs\Restaurant\server.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Restaurant\register.php(1): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\Restaurant\server.php on line 10
+[21-Oct-2019 13:01:59 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php72\sess_0507cc4aa71ca858c6cdb44c18551dc8, O_RDWR) failed: No such file or directory (2) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[21-Oct-2019 13:01:59 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php72) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[21-Oct-2019 13:01:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in C:\xampp\htdocs\Restaurant\server.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Restaurant\register.php(1): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\Restaurant\server.php on line 10
+[21-Oct-2019 13:02:02 UTC] PHP Warning:  session_start(): open(/var/cpanel/php/sessions/ea-php72\sess_0507cc4aa71ca858c6cdb44c18551dc8, O_RDWR) failed: No such file or directory (2) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[21-Oct-2019 13:02:02 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /var/cpanel/php/sessions/ea-php72) in C:\xampp\htdocs\Restaurant\server.php on line 2
+[21-Oct-2019 13:02:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in C:\xampp\htdocs\Restaurant\server.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Restaurant\register.php(1): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\Restaurant\server.php on line 10
